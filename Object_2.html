@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function getData() {
+            var req = new XMLHttpRequest();
+            req.open("get", "https://padax.github.io/taipei-day-trip-resources/taipei-attractions.json")
+            req.onload = function () {
+                alert(this.responseText);
+            };
+            req.send();
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script type="css/text">
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <span onclick="getData();">
+            測試
+        </span>
+    </div>
+</body>
+
+</html>

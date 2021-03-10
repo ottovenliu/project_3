@@ -2,7 +2,7 @@ import urllib.request as request
 import json
 
 src = "https://padax.github.io/taipei-day-trip-resources/taipei-attractions.json"
-with request.urlopen(src) as response:  # （備註：後來是用留言中網友提供桃園政府API成功的）
+with request.urlopen(src) as response:
     data = json.load(response)
 clist = data["result"]["results"]
 with open("data.txt", "w", encoding="utf-8") as file:
