@@ -34,12 +34,51 @@
             }
         }
     </script>
+    <script>
+        // 取得容器
+        var myList = document.getElementById('DIV');
+        // 建立新的 <li> 元素
+        var newDiv = document.createElement('div');
+
+        // 建立 textNode 文字節點
+        var textNode = document.createTextNode("Hello world!");
+
+        // 透過 appendChild 將 textNode 加入至 newList
+        newDiv.appendChild(textNode);
+
+        // 透過 appendChild 將 newList 加入至 myList
+        myList.appendChild(newDiv);
+    </script>
 </head>
 
 <body>
     <div id="box"></div>
     <input type="button" id="add" value="新增元素" />
     <input type="button" id="del" value="刪除元素" />
+    <div id="DIV"></div>
+    <ul id="myList">
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+    </ul>
 </body>
 
 </html>
+
+
+
+<script>
+    // 取得容器
+    var myList = document.getElementById('DIV');
+    // 建立新的 <li> 元素
+    var newDiv = document.createElement('div');
+
+    // 建立 textNode 文字節點
+    var textNode = document.createTextNode("Hello world!");
+
+    // 透過 appendChild 將 textNode 加入至 newList
+    newDiv.appendChild(textNode);
+
+    // 透過 appendChild 將 newList 加入至 myList
+    myList.appendChild(newDiv);
+</script>
