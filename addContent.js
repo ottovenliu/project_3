@@ -10,20 +10,21 @@ window.onload = function addImg() {
         boxConten.style.justifyContent = "center";
         boxConten.style.alignItems = "center";
         boxConten.style.flexDirection = "column";
-        imgBox.style.maxWidth = "80%";
-        imgBox.style.width = "270";
+        imgBox.style.maxWidth = "100%";
+        imgBox.style.width = "100%";
         imgBox.style.maxHeight = "80%";
-        imgBox.style.height = "270px";
+        imgBox.style.height = "250px";
         imgBox.style.display = "flex";
         imgBox.style.justifyContent = "center";
         imgBox.style.alignItems = "center";
         textBox.style.maxHeight = "20%";
         textBox.style.height = "60px";
         img.style.flex = "none";
-        img.style.width = "auto";
-        img.style.height = "auto";
+        img.style.width = "100%";
+        img.style.height = "100%";
         img.style.maxWidth = "100%";
-        img.style.maxHeight = "100%"
+        img.style.maxHeight = "100%";
+        img.style.objectFit = "cover";
 
         img.src = imageSources;
         imgBox.setAttribute("id", `imgBox_${i}`)
