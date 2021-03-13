@@ -169,11 +169,11 @@
             body>.contentSpace>.item {
                 width: 45%;
             }
-            body>.contentSpace>.item>.{
+            /* body>.contentSpace>.item>.{
                 
                 max-height: 100%;
 
-            }
+            } */
 
         }
 
